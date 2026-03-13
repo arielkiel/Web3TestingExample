@@ -1,0 +1,14 @@
+{
+  "name": "web3-qa-examples",
+  "version": "1.0.0",
+  "description": "Production-grade Web3 QA automation examples covering smart contract testing, wallet UI automation, blockchain API validation, and AI-assisted QA tooling.",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix hardhat-contract-tests && npm install --prefix playwright-web3-ui && npm install --prefix api-tests && npm install --prefix ai-tools-integration",
+    "test:contracts": "npm test --prefix hardhat-contract-tests",
+    "test:ui": "npm test --prefix playwright-web3-ui",
+    "test:api": "npm test --prefix api-tests",
+    "analyze-logs": "npm run analyze-logs --prefix ai-tools-integration",
+    "generate-tests": "npm run generate-tests --prefix ai-tools-integration"
+  }
+}

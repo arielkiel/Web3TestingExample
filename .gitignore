@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment variables — never commit secrets
+.env
+.env.*
+!.env.example
+
+# Hardhat artifacts
+hardhat-contract-tests/artifacts/
+hardhat-contract-tests/cache/
+hardhat-contract-tests/coverage/
+hardhat-contract-tests/typechain-types/
+hardhat-contract-tests/slither-report.json
+
+# Playwright output
+playwright-web3-ui/playwright-report/
+playwright-web3-ui/test-results/
+
+# AI-generated test files (review before committing)
+ai-tools-integration/test-generator/generated-*.test.js
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

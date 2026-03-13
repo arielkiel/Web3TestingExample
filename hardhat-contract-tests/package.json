@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-contract-tests",
+  "version": "1.0.0",
+  "description": "Smart contract unit and integration tests for GameToken using Hardhat + ethers.js + Chai",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0"
+  }
+}

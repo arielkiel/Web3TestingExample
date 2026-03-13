@@ -1,0 +1,13 @@
+{
+  "name": "ai-tools-integration",
+  "version": "1.0.0",
+  "description": "AI-powered QA tools using Claude API — log analysis and test generation for Web3",
+  "scripts": {
+    "analyze-logs": "node log-analyzer/log-analyzer.js --demo",
+    "generate-tests": "node test-generator/test-generator.js --contract ../hardhat-contract-tests/contracts/GameToken.sol",
+    "audit-coverage": "node test-generator/test-generator.js --contract ../hardhat-contract-tests/contracts/GameToken.sol --audit-existing ../hardhat-contract-tests/test/GameToken.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0"
+  }
+}
